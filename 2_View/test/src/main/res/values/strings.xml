@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="moble">hello moble</string>
+
+    <string name="ex_2_3">ex_2_3_textview</string>
+    <string name="ex_2_4">ex_2_4_textview</string>
+</resources>

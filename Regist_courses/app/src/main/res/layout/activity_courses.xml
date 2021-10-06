@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D39F9F">
+
+        <TextView
+            android:id="@+id/tv"
+            android:text="개인정보"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:text="이름"
+            android:textSize="25dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:layout_alignBaseline="@+id/name"
+            android:layout_toRightOf="@+id/name"
+            android:hint="이름" />
+
+
+        <TextView
+            android:id="@+id/phone"
+            android:text="연락처"
+            android:textSize="25dp"
+            android:layout_below="@id/name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_alignBaseline="@id/phone"
+            android:layout_toRightOf="@id/phone"
+            android:hint="전화번호"
+
+            />
+
+        <TextView
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:text="개인정보 동의"
+            android:textSize="25dp" />
+
+
+        <RadioGroup
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_toRightOf="@+id/accept"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/ch_01"
+                android:text="동의"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioButton
+                android:id="@+id/ch_02"
+                android:text="비동의"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/rl1"
+        android:id="@+id/rl_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7F9A80">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="수강신청"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:text="과목"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv3"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자바"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/python"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="파이썬"
+                android:textSize="18dp" />
+
+
+            <RadioButton
+                android:id="@+id/c"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C언어"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/html"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HTML"
+                android:textSize="18dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subject"
+            android:layout_marginTop="-1dp"
+            android:text="시간"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="평일"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="야간"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제출"
+            android:layout_marginLeft="80dp"
+            android:onClick="on_Click_submit"/>
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="42dp"
+            android:layout_toRightOf="@id/submit"
+            android:text="취소"
+            android:onClick="on_Click_cancle"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

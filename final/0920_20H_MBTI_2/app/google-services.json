@@ -1,0 +1,88 @@
+{
+  "project_info": {
+    "project_number": "376883208844",
+    "firebase_url": "https://mbti-c531c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mbti-c531c",
+    "storage_bucket": "mbti-c531c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376883208844:android:1d7ba94b69cc75fb7611a9",
+        "android_client_info": {
+          "package_name": "com.moble.mbti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376883208844-0jqgd9qdv9u45qb7n0lc0gvfda9u8531.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moble.mbti",
+            "certificate_hash": "0abab7e752e95269d3358a5f5b8347ec9f53c275"
+          }
+        },
+        {
+          "client_id": "376883208844-1pde6dvbsm8qdk0g6sn9dvrmmd7ipqa4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moble.mbti",
+            "certificate_hash": "3d9eed92f32498266eeee5b1cf51ba36a0ee82ff"
+          }
+        },
+        {
+          "client_id": "376883208844-a1bc6j54r52os9e6rvf20hoskfohu4kj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moble.mbti",
+            "certificate_hash": "b16568a6a8e920a9e625c96033a951e63e1ccbfa"
+          }
+        },
+        {
+          "client_id": "376883208844-b6j70a1bsuvfih85qu4uteqc778jhnko.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moble.mbti",
+            "certificate_hash": "6743666f7b313d097a5ebbacff3fb40dd619cb5c"
+          }
+        },
+        {
+          "client_id": "376883208844-hbfb1ijm0k0ocvl3op8e2rnvu66jfvk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moble.mbti",
+            "certificate_hash": "ba6fa102606edb7ccd6ea4eed0206745b12faaf6"
+          }
+        },
+        {
+          "client_id": "376883208844-rve0s25a2jlfk6nm0jc8vhkska2tfsat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moble.mbti",
+            "certificate_hash": "f60f93428703d460aad088fac85a3fac03af3186"
+          }
+        },
+        {
+          "client_id": "376883208844-9li45omlv50d42h3gk27auhcjsd9nja1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyB75DWgAC0qhZ__DuGASVhOMEqo2tfnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376883208844-9li45omlv50d42h3gk27auhcjsd9nja1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

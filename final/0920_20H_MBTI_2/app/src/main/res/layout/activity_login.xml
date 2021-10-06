@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#F1F1F1">
+
+    <!-- tv에 리스너 링크 달아주기 -->
+    <TextView
+        android:id="@+id/tv_MbtiLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textSize="20dp"
+        android:text="MBTI 검사하기"
+        android:paddingLeft="5dp"
+        android:background="#DCD9D9"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <!--이미지 뷰 (로고) 위치-->
+
+        <ImageView
+            android:id="@+id/img_login"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/img_login"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_login"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <!--
+                <Button
+                    android:id="@+id/btn_memberjoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="로그아웃" />
+                  -->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

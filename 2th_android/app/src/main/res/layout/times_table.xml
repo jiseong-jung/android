@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="문제:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv1"
+            android:layout_toRightOf="@id/tv1"
+            android:background="#D5C3FF"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_alignRight="@id/tv1"
+
+            android:layout_marginBottom="10dp"
+            android:text="답:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question"
+            android:layout_alignBaseline="@id/tv2"
+            android:layout_alignLeft="@id/question"
+            android:layout_toRightOf="@id/tv2"
+            android:background="#BEB0DD"
+            android:text=""
+            android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_below="@id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="결과:"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answer"
+            android:layout_alignBaseline="@id/tv3"
+            android:layout_toRightOf="@id/tv3"
+            android:layout_toLeftOf="@id/tv4"
+            android:background="#BEB0DD"
+            android:text=" "
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answer"
+            android:layout_alignBaseline="@id/tv3"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:text="정답횟수:"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answer"
+            android:layout_alignBaseline="@id/tv3"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/tv4"
+            android:background="#BEB0DD"
+            android:text="0"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv4"
+            android:layout_alignParentRight="true"
+            android:text="stop" />
+
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv4"
+            android:layout_toLeftOf="@id/btn_stop"
+            android:text="start" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btn_start"
+            android:layout_toLeftOf="@id/btn_start"
+            android:max="60"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/process"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_start"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="READY"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:useDefaultMargins="false"
+            >
+
+
+            <Button
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:text="2"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:text="3"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:text="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:text="5"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:text="6"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:text="7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:text="8"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:text="9"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:id="@+id/check"
+                android:text="확인"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:text="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="btn_click"/>
+
+            <Button
+                android:id="@+id/cancle"
+                android:text="취소"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="btn_click"/>
+
+
+
+
+
+
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+

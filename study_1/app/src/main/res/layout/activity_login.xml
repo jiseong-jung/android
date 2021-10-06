@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_activity"
+    android:paddingTop="20dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:layout_marginBottom="40dp"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:maxWidth="400dp"
+        android:maxHeight="200dp"
+        android:src="@drawable/enterprise" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/btn_img"
+        android:layout_gravity="center"
+        android:background="#000000"
+        />
+
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:hint="ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"/>
+
+
+
+    <EditText
+        android:id="@+id/et_pw"
+        android:hint="PASSWORD"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pw"
+        android:layout_centerHorizontal="true"
+        android:text="Login" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:text="Keep Login"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_find_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/view_ver1"
+        android:text="find_id"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:id="@+id/view_ver1"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@id/tv_find_pw"
+        android:background="#000000" />
+
+
+    <TextView
+        android:id="@+id/tv_find_pw"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="find_pw" />
+
+    <View
+        android:id="@+id/view_ver2"
+        android:layout_toRightOf="@id/tv_find_pw"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/tv_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/view_ver2"
+        android:text="member join" />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

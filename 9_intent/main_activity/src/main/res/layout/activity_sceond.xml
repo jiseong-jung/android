@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#D34585"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/se_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancle"
+        android:onClick="onClick_cancle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et"
+        />
+
+    <Button
+        android:id="@+id/se_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change"
+        android:onClick="onClick_ok"
+        android:layout_toLeftOf="@id/se_btn2"
+        android:layout_below="@id/et"
+        />
+
+</RelativeLayout>

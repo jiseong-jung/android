@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spnnier_mbti">
+        <item>ESFP</item>
+        <item>INTP</item>
+        <item>ENTJ</item>
+        <item>ENTP</item>
+        <item>INFJ</item>
+        <item>INFP</item>
+        <item>ENFJ</item>
+        <item>ENFP</item>
+        <item>ISTJ</item>
+        <item>ISFJ</item>
+        <item>ESTJ</item>
+        <item>ESFJ</item>
+        <item>ISTP</item>
+        <item>ISFP</item>
+        <item>ESTP</item>
+        <item>INTJ</item>
+    </string-array>
+
+
+</resources>

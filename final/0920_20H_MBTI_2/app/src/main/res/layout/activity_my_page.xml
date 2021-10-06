@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPage"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/iv_myPage"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:adjustViewBounds="true"
+            android:background="#E1E1E1"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:minWidth="200dp"
+            android:minHeight="200dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_myNick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_myPage"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_setNick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/et_setNick"
+                android:text="닉네임 : "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_setNick"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_setNick" />
+
+            <Button
+                android:id="@+id/btn_overlap"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_nickname"
+                android:layout_alignParentRight="true"
+                android:text="중복확인" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_myMbti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_myNick"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_setMbti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MBTI : "
+                android:textSize="20dp"
+                android:layout_alignBaseline="@id/et_setNick"/>
+
+            <Spinner
+                android:id="@+id/sp_mbti"
+                android:layout_width="200dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/ll_myMbti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_join"
+                android:layout_marginRight="20dp"
+                android:text="랜덤 문자 수신 동의"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/cb_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_match"
+                android:layout_toRightOf="@id/tv_match" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="수정" />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

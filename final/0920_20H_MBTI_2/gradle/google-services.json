@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "376883208844",
+    "firebase_url": "https://mbti-c531c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mbti-c531c",
+    "storage_bucket": "mbti-c531c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376883208844:android:1d7ba94b69cc75fb7611a9",
+        "android_client_info": {
+          "package_name": "com.moble.mbti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376883208844-b6j70a1bsuvfih85qu4uteqc778jhnko.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moble.mbti",
+            "certificate_hash": "6743666f7b313d097a5ebbacff3fb40dd619cb5c"
+          }
+        },
+        {
+          "client_id": "376883208844-9li45omlv50d42h3gk27auhcjsd9nja1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyB75DWgAC0qhZ__DuGASVhOMEqo2tfnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376883208844-9li45omlv50d42h3gk27auhcjsd9nja1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

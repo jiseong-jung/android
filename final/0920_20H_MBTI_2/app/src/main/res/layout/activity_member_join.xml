@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberJoin"
+    android:padding="10dp"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="회원 정보 입력"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_below="@id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="닉네임 : "
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/et_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_nickname"
+            android:layout_toLeftOf="@id/btn_overlap"
+            android:layout_toRightOf="@id/tv_nickname"
+            android:hint="2~8글자">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_overlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_nickname"
+            android:layout_alignParentRight="true"
+            android:text="중복확인"
+            android:enabled="false"/>
+
+        <!-- 별명 중복 여부 확인-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mbti"
+            android:text="MBTI"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/tv_nickname" />
+
+        <LinearLayout
+            android:id="@+id/ll_join"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_mbti"
+            android:background="#FFFAF7"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/sp_mbti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" /> <!-- Spinner_MBTI -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_join"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_join"
+                android:layout_marginRight="20dp"
+                android:text="랜덤 문자 수신 동의"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/cb_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_match"
+                android:layout_toRightOf="@id/tv_match" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:enabled="false"
+            android:text="설정" />
+
+
+
+    </RelativeLayout>
+
+    <!-- 기본 프로필 사진으로 이용할 drawable 안에 있는 images-->
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/default_img"
+        android:visibility="invisible" />
+
+</LinearLayout>

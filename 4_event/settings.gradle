@@ -1,0 +1,17 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "4_event"
+include ':app'
+include ':onclick_2'
+include ':onclick_3'
+include ':check'
+include ':check2_text'
+include ':onclick_4'
+include ':time_table'
+include ':each_onclick'

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="당신의 스트레스 위험도를 알아봅시다."/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="테스트 시작"
+        android:layout_below="@id/tv1"/>
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:background="#555555"
+        android:layout_below="@id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:text="테스트가 끝난후   결과가 나옵니다."
+        android:gravity="center"
+        android:textSize="50dp"/>
+
+
+
+
+</RelativeLayout>

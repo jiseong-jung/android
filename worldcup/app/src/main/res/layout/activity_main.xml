@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:text="서포터 월드컵"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게임을 시작합니다."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv1"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+
+            android:id="@+id/img1"
+            android:onClick="on_Image_Click"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:maxWidth="500dp"
+            android:maxHeight="500dp"
+             />
+
+        <ImageButton
+            android:id="@+id/img2"
+            android:onClick="on_Image_Click"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/img1"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:maxWidth="500dp"
+            android:maxHeight="500dp"
+             />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/round"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/ll"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="8강입니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

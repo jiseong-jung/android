@@ -1,0 +1,14 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "adapter"
+include ':list_view_static'
+include ':list_view_dynamic'
+include ':list_view_activity'
+include ':list_view_xml'
+include ':list_view_getview'
